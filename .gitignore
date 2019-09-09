@@ -1,0 +1,17 @@
+node_modules
+.DS_Store
+.expo/*
+.vscode
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+web-report/
+storybook/storyLoader.js
+cypress/screenshots
+cypress/videos
+bin/Exponent.app
