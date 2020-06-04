@@ -1,16 +1,16 @@
 {
-  "main": "./src/App.js",
+  "main": "./src/App.tsx",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "test": "jest",
-    "prestorybook": "rnstl --searchDir ./src/components --pattern \"**/stories.js\"",
+    "prestorybook": "rnstl --searchDir ./src/components --pattern \"**/stories.tsx\"",
     "storybook": "expo start --web --config ./app-storybook.json"
   },
   "engines": {
-    "node": ">12.0.0"
+    "node": "^12.13.0"
   },
   "dependencies": {
     "expo": "^37.0.0",
@@ -18,25 +18,29 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-native": "expo/react-native#sdk-37",
-    "react-native-web": "^0.11.3",
+    "react-native-web": "~0.11.7",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
     "react-router-native": "^5.0.0",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.2",
     "@storybook/addons": "^5.2.0",
     "@storybook/react-native": "^5.2.0",
+    "@types/expo": "^33.0.1",
+    "@types/jest": "^25.2.3",
+    "@types/react": "^16.9.35",
+    "@types/react-native": "^0.62.12",
+    "@types/react-router": "^5.1.7",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/react-router-native": "^5.1.0",
+    "@types/styled-components": "^5.1.0",
     "babel-preset-expo": "^8.0.0",
     "expo-cli": "^3.21.3",
     "jest-expo": "^37.0.0",
     "react-native-storybook-loader": "^1.8.0",
-    "react-test-renderer": "^16.9.0"
-  },
-  "jest": {
-    "preset": "jest-expo",
-    "transformIgnorePatterns": [
-      "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-router|@unimodules/.*|sentry-expo|native-base|apollo-boost)"
-    ]
+    "react-test-renderer": "^16.9.0",
+    "typescript": "^3.9.3"
   }
 }

@@ -1,18 +1,16 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { SafeAreaView, ScrollView, View } from 'react-native';
 import NavBar from '../components/NavBar';
 
-const BaseLayout = ({ children }) => {
+const BaseLayout: FunctionComponent = ({ children }) => {
   return (
-    <SafeAreaView style={{flex: 1}}>
-      <ScrollView>
-        {children}
-      </ScrollView>
+    <SafeAreaView style={{ flex: 1 }}>
+      <ScrollView>{children}</ScrollView>
       <View>
         <NavBar />
       </View>
     </SafeAreaView>
-  )
-}
+  );
+};
 
 export default BaseLayout;

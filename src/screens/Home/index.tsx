@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Text } from 'react-native';
-import BaseLayout from '../../layouts/BaseLayout';
 import { SettingsLink } from '../../navigation/routes';
 import { WelcomeText } from './styledComponents';
 
-const HomeScreen = () => {
+const HomeScreen: FunctionComponent = () => {
   return (
-    <BaseLayout>
+    <>
       <WelcomeText>Welcome Home!</WelcomeText>
-      <SettingsLink><Text>Go to Settings</Text></SettingsLink>
-    </BaseLayout>
+      <SettingsLink>
+        <Text>Go to Settings</Text>
+      </SettingsLink>
+    </>
   );
-}
+};
 
 export default HomeScreen;

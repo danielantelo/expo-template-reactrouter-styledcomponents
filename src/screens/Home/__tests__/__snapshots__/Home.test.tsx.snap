@@ -12,13 +12,15 @@ exports[`HomeScreen renders 1`] = `
   <RCTScrollView>
     <View>
       <Text
-        className="sc-AykKE bMNOwo"
+        className="sc-AxiKw ibkFZR"
       >
         Welcome Home!
       </Text>
       <View
         accessible={true}
+        focusable={true}
         isTVSelectable={true}
+        onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -37,14 +39,16 @@ exports[`HomeScreen renders 1`] = `
   </RCTScrollView>
   <View>
     <View
-      className="sc-AykKC fQNdfl"
+      className="sc-AxjAm eEzWIB"
     >
       <View
-        className="sc-AykKD jHLvSh"
+        className="sc-AxirZ eEmRVZ"
       >
         <View
           accessible={true}
+          focusable={true}
           isTVSelectable={true}
+          onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}
@@ -61,11 +65,13 @@ exports[`HomeScreen renders 1`] = `
         </View>
       </View>
       <View
-        className="sc-AykKD jHLvSh"
+        className="sc-AxirZ eEmRVZ"
       >
         <View
           accessible={true}
+          focusable={true}
           isTVSelectable={true}
+          onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
           onResponderRelease={[Function]}

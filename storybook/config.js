@@ -5,8 +5,4 @@ import { loadStories } from './storyLoader';
 
 configure(loadStories, module);
 
-addDecorator(story => (
-  <SafeAreaView>
-    {story()}
-  </SafeAreaView>
-));
+addDecorator((story) => <SafeAreaView>{story()}</SafeAreaView>);

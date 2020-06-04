@@ -8,7 +8,7 @@ describe('StyledComponent', () => {
 
   beforeEach(() => {
     stylesSpy = jest.fn(() => 'returned styled component');
-    styled.mockImplementation(() => stylesSpy)
+    styled.mockImplementation(() => stylesSpy);
   });
 
   it('calls chosen css-in-js framework and returns its result', () => {
@@ -17,5 +17,5 @@ describe('StyledComponent', () => {
     expect(styled).toBeCalledWith('div');
     expect(stylesSpy).toBeCalledWith(styles);
     expect(styledComponent).toEqual('returned styled component');
-  })
-})
+  });
+});

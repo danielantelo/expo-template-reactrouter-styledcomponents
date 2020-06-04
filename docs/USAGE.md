@@ -19,6 +19,7 @@ yarn ios
 1. Install the Expo app on your mobile device.
 
 2. Launch the app locally
+
 ```
 yarn start
 ```
