@@ -1,17 +1,19 @@
 # USAGE
 
+Install dependencies with `npm i` or `yarn`.
+
 ## App
 
 ### Web
 
 ```
-yarn web
+npm run web
 ```
 
 #### iOS Emulator
 
 ```
-yarn ios
+npm run ios
 ```
 
 #### Mobile Device
@@ -21,7 +23,7 @@ yarn ios
 2. Launch the app locally
 
 ```
-yarn start
+npm run start
 ```
 
 3. Scan the QR code with your device using the expo app
@@ -29,5 +31,5 @@ yarn start
 ## Storybook
 
 ```
-yarn storybook
+npm run storybook
 ```

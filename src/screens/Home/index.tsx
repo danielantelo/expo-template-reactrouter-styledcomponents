@@ -1,15 +1,24 @@
 import React, { FunctionComponent } from 'react';
-import { Text } from 'react-native';
-import { SettingsLink } from '../../navigation/routes';
-import { WelcomeText } from './styledComponents';
+import { Body, Button, Content, Header, Icon, Right, Title, Text } from 'native-base';
+import { useRoutes } from '../../navigation/routes';
 
 const HomeScreen: FunctionComponent = () => {
+  const { navigateToSettings } = useRoutes();
   return (
     <>
-      <WelcomeText>Welcome Home!</WelcomeText>
-      <SettingsLink>
-        <Text>Go to Settings</Text>
-      </SettingsLink>
+      <Header noLeft>
+        <Body>
+          <Title>Welcome Home!</Title>
+        </Body>
+        <Right>
+          <Button transparent onPress={navigateToSettings}>
+            <Icon name="settings" />
+          </Button>
+        </Right>
+      </Header>
+      <Content>
+        <Text>main screen</Text>
+      </Content>
     </>
   );
 };

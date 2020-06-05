@@ -14,10 +14,3 @@ export const NavBarContainer = StyledComponent(() => {
     },
   };
 }, View);
-
-export const NavBarItem = StyledComponent(
-  {
-    padding: '16px',
-  },
-  View
-);

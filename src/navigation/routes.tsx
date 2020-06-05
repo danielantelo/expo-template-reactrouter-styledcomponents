@@ -1,11 +1,16 @@
-import React, { FunctionComponent } from 'react';
-import { Link } from './router';
+import { useContext } from 'react';
+import { __RouterContext } from 'react-router';
 
 export const routes: { [key: string]: () => string } = {
   home: () => '/',
   settings: () => '/settings',
 };
 
-export const HomeLink: FunctionComponent = ({ children }) => <Link to={routes.home()}>{children}</Link>;
-
-export const SettingsLink: FunctionComponent = ({ children }) => <Link to={routes.settings()}>{children}</Link>;
+export const useRoutes = () => {
+  const { history } = useContext(__RouterContext);
+  console.log(history);
+  return {
+    navigateToHome: () => history.push(routes.home()),
+    navigateToSettings: () => history.push(routes.settings()),
+  };
+};

@@ -1,16 +1,24 @@
 import React, { FunctionComponent } from 'react';
-import { Text } from 'react-native';
-import BaseLayout from '../../layouts/BaseLayout';
-import { HomeLink } from '../../navigation/routes';
-import { Heading } from './styledComponents';
+import { Body, Button, Content, Header, Icon, Left, Title, Text } from 'native-base';
+import { useRoutes } from '../../navigation/routes';
 
 const SettingsScreen: FunctionComponent = () => {
+  const { navigateToHome } = useRoutes();
   return (
     <>
-      <Heading>Settings Screen</Heading>
-      <HomeLink>
-        <Text>Back</Text>
-      </HomeLink>
+      <Header>
+        <Left>
+          <Button transparent onPress={navigateToHome}>
+            <Icon name="arrow-back" />
+          </Button>
+        </Left>
+        <Body>
+          <Title>Settings</Title>
+        </Body>
+      </Header>
+      <Content>
+        <Text>settings screen</Text>
+      </Content>
     </>
   );
 };

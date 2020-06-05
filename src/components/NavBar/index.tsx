@@ -1,22 +1,22 @@
 import React, { FunctionComponent } from 'react';
-import { Text } from 'react-native';
-import { HomeLink, SettingsLink } from '../../navigation/routes';
-import { NavBarContainer, NavBarItem } from './styledComponents';
+import { Button, Footer, FooterTab, Icon, Text } from 'native-base';
+import { useRoutes } from '../../navigation/routes';
 
 const NavBar: FunctionComponent = () => {
+  const { navigateToHome, navigateToSettings } = useRoutes();
   return (
-    <NavBarContainer>
-      <NavBarItem>
-        <HomeLink>
-          <Text>Home</Text>
-        </HomeLink>
-      </NavBarItem>
-      <NavBarItem>
-        <SettingsLink>
+    <Footer>
+      <FooterTab>
+        <Button vertical onPress={navigateToHome}>
+          <Icon name="home" />
+          <Text>Apps</Text>
+        </Button>
+        <Button vertical onPress={navigateToSettings}>
+          <Icon name="settings" />
           <Text>Settings</Text>
-        </SettingsLink>
-      </NavBarItem>
-    </NavBarContainer>
+        </Button>
+      </FooterTab>
+    </Footer>
   );
 };
 
